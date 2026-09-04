@@ -299,5 +299,6 @@ VITE_API_URL=http://localhost:5000
 
 ## 🔗 Links
 
+- **GitHub Repository**: [https://github.com/attarubedulla272/1fi-marketplace](https://github.com/attarubedulla272/1fi-marketplace)
 - **Demo**: [Deployed Link]
 - **Video**: [Demo Video Link]
