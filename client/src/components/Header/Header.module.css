@@ -1,0 +1,144 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: linear-gradient(135deg, #5E27EC 0%, #7B4FFF 50%, #9B6DFF 100%);
+  box-shadow: var(--shadow-md);
+}
+
+.headerInner {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 24px;
+}
+
+.logoSection {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+}
+
+.logoIcon {
+  width: 36px;
+  height: 36px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.logoIcon svg {
+  width: 20px;
+  height: 20px;
+}
+
+.logoText {
+  display: flex;
+  flex-direction: column;
+}
+
+.logoName {
+  font-size: 18px;
+  font-weight: 800;
+  color: white;
+  letter-spacing: -0.5px;
+  line-height: 1.1;
+}
+
+.logoTagline {
+  font-size: 10px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.75);
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.navLinks {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.navLink {
+  padding: 8px 16px;
+  border-radius: var(--radius-pill);
+  font-size: 13px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.85);
+  transition: all 0.2s ease;
+  text-decoration: none;
+}
+
+.navLink:hover {
+  background: rgba(255, 255, 255, 0.15);
+  color: white;
+}
+
+.navLinkActive {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+.searchBar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: var(--radius-pill);
+  padding: 8px 16px;
+  min-width: 280px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.2s ease;
+}
+
+.searchBar:focus-within {
+  background: rgba(255, 255, 255, 0.25);
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.searchIcon {
+  width: 16px;
+  height: 16px;
+  color: rgba(255, 255, 255, 0.7);
+  flex-shrink: 0;
+}
+
+.searchInput {
+  border: none;
+  background: transparent;
+  color: white;
+  font-size: 13px;
+  font-weight: 500;
+  width: 100%;
+  outline: none;
+  font-family: var(--font-family);
+}
+
+.searchInput::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+@media (max-width: 768px) {
+  .headerInner {
+    padding: 10px 16px;
+  }
+  
+  .searchBar {
+    display: none;
+  }
+  
+  .navLinks {
+    display: none;
+  }
+  
+  .mobileMenu {
+    display: flex;
+  }
+}
