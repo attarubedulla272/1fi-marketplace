@@ -12,7 +12,7 @@ const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost:27017/onefi-
 
 // Middleware
 app.use(cors({
-  origin: process.env.CLIENT_URL || 'http://localhost:5173',
+  origin: process.env.CLIENT_URL ? [process.env.CLIENT_URL, 'http://localhost:5173'] : true,
   credentials: true
 }));
 app.use(express.json());
